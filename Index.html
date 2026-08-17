@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The UX Review</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./all.min.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+  </head>
+  <body>
+    <nav class="fixed-top">
+      <div class="container">
+        <div
+          class="inner p-2 rounded-4 bg-white position-relative mt-3 border-black border-2 border nav-bar-card"
+        >
+          <div
+            class="inner d-flex justify-content-between flex-center nav-bar-inner"
+          >
+            <a href="#home" class="text-decoration-none text-loose-leading">
+              <span class="fs-2 fw-bold text-black">The UX</span
+              ><span class="fs-2 fw-bold text-accent-orange"> Review</span>
+            </a>
+            <div class="d-flex gap-5 fw-semibold nav-links">
+              <a href="#home" class="nav-link"
+                ><span class="fs-4">HOME</span></a
+              >
+              <a href="#articles" class="nav-link"
+                ><span class="fs-4">LATEST ARTICLES</span></a
+              >
+              <a href="#authors" class="nav-link"
+                ><span class="fs-4">AUTHORS</span></a
+              >
+              <a href="#community" class="nav-link"
+                ><span class="fs-4">COMMUNITY</span></a
+              >
+            </div>
+            <a
+              href="#"
+              class="py-2 px-3 flex-center border border-2 bg-accent-yellow border-black rounded-5 text-decoration-none subscribe-btn"
+            >
+              <span class="fs-6 fw-bold text-black">SUBSCRIBE NOW</span>
+            </a>
+            <button
+              type="button"
+              class="nav-toggle d-none"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="home">
+      <section
+        class="mb-5 border-3 border-bottom border-black pb-5 position-relative"
+      >
+        <div class="decor-square-1 opacity-25"></div>
+        <div class="decor-square-2 opacity-25"></div>
+        <div class="decor-square-3 opacity-25"></div>
+        <div class="container section-spacing-top mb-5">
+          <div class="inner pb-2">
+            <div
+              class="badge-tilt-box flex-center mb-5 badge-tilt-dark text-white bg-black position-relative"
+            >
+              <div class="badge-tilt-dark-shadow"></div>
+              <span class="text-white fw-semibold">TRENDING NOW</span>
+            </div>
+
+            <div class="row gap-5 hero-row">
+              <div class="col hero-content-col">
+                <div
+                  class="heading-stacked-xl text-loose-leading text-black mb-5"
+                >
+                  <span>BRUTAL</span>
+                </div>
+                <div
+                  class="heading-stacked-xl text-loose-leading mb-5 text-danger"
+                >
+                  <span>THOUGHTS</span>
+                </div>
+                <div
+                  class="heading-stacked-xl text-loose-leading mb-5 text-primary"
+                >
+                  <span>BOLD IDEAS</span>
+                </div>
+                <div
+                  class="inner bg-white flex-center shadow-hard p-4 border border-2 border-black quote-box"
+                >
+                  <span class="fs-2 fw-semibold"
+                    >"Most design advice is safe, vague, and forgettable. We
+                    publish the critiques studios don't want you to read — and
+                    the ideas that actually move the needle."</span
+                  >
+                </div>
+                <div class="d-flex mt-5 gap-4 hero-cta-row">
+                  <a
+                    href="#articles"
+                    class="bg-black p-3 shadow-hard text-decoration-none"
+                    ><span class="fs-4 text-white fw-semibold"
+                      >START READING</span
+                    ></a
+                  >
+                  <a
+                    href="#"
+                    class="bg-white p-3 shadow-hard border border-3 border-black text-decoration-none"
+                    ><span class="fs-4 text-black fw-bold">WATCH INTRO</span></a
+                  >
+                </div>
+              </div>
+
+              <div class="col hero-image-col">
+                <div
+                  class="hero-image-frame img w-75 ms-auto border border-3 border-black image-frame-tilt"
+                >
+                  <img
+                    src="https://images.openai.com/static-rsc-4/usMXT9kYOREl0wdeP727-1uVdcOmyYoFRgVoTcCpD_u9r2_EMBStGJQmeR0M3w6vURmfhvjqGDWOoz6sCYqdnLcCfrcKjAzzzHp9RpEkq2kjQ4F_2PKVOc70L57GcVCGeWr4AuzZJ8_E6-Hcn6114IWBysp1w9GU0Ag_FZxtWd2Vu8XUk5-1I2r0-wkvkz25?purpose=fullsize"
+                    class="w-100 h-auto"
+                    alt="Illustration of a designer reviewing wireframes at a desk"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5 mt-5 pb-5">
+        <div class="container">
+          <div class="d-flex justify-content-between mb-4 section-heading-row">
+            <span class="heading-section-xl text-loose-leading"
+              >MEET THE REVIEWERS</span
+            >
+          </div>
+          <div class="row g-4 reviewer-cards-row">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card h-100 reviewer-card border-thick p-5 rounded-4 bg-body card-shadow-soft"
+              >
+                <p class="fs-6 text-body-secondary">
+                  "I stopped writing safe reviews the day a client thanked me
+                  for finally telling them the truth about their homepage."
+                </p>
+                <h3 class="fs-4 fw-bold mb-0">Mahmoud Ahmed</h3>
+                <span class="fs-6 text-body-secondary">Senior UX Editor</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card h-100 reviewer-card border-thick p-5 rounded-4 bg-body card-shadow-soft"
+              >
+                <p class="fs-6 text-body-secondary">
+                  "Good design criticism isn't cruelty, it's respect. I only
+                  critique work I think is worth making better."
+                </p>
+                <h3 class="fs-4 fw-bold mb-0">Sara Youssef</h3>
+                <span class="fs-6 text-body-secondary">Visual Design Lead</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card h-100 reviewer-card border-thick p-5 rounded-4 bg-body card-shadow-soft"
+              >
+                <p class="fs-6 text-body-secondary">
+                  "Most onboarding fails for the same reason: teams design for
+                  the demo, not the second visit."
+                </p>
+                <h3 class="fs-4 fw-bold mb-0">Omar Fathy</h3>
+                <span class="fs-6 text-body-secondary">
+                  Product UX Researcher
+                </span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <div
+                class="card h-100 reviewer-card border-thick p-5 rounded-4 bg-body card-shadow-soft"
+              >
+                <p class="fs-6 text-body-secondary">
+                  "I've reviewed over 400 portfolios. The ones that get hired
+                  tell a story — the rest just show screens."
+                </p>
+                <h3 class="fs-4 fw-bold mb-0">Laila Hassan</h3>
+                <span class="fs-6 text-body-secondary">
+                  Design Community Manager
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="articles">
+      <section class="mb-5 border-3 border-bottom border-black pb-5">
+        <div class="container section-spacing-top mb-4">
+          <div
+            class="badge-tilt-box flex-center mb-4 badge-tilt-dark text-white bg-black position-relative"
+          >
+            <div class="badge-tilt-dark-shadow"></div>
+            <span class="text-white fw-semibold">FULL ARCHIVE</span>
+          </div>
+          <div class="heading-stacked-xl text-loose-leading text-black mb-3">
+            <span>ALL ARTICLES</span>
+          </div>
+          <p
+            class="fs-3 fw-semibold text-body-secondary"
+            style="max-width: 640px"
+          >
+            Every review, teardown, and case study we've published — sorted
+            newest first.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap mt-4">
+            <div
+              class="tag-chip fw-bold border-thick flex-center bg-black text-white"
+              style="width: auto; padding: 0 18px"
+            >
+              <span>ALL</span>
+            </div>
+            <div
+              class="tag-chip fw-bold border-thick flex-center"
+              style="width: auto; padding: 0 18px"
+            >
+              <span>UX</span>
+            </div>
+            <div
+              class="tag-chip fw-bold border-thick flex-center"
+              style="width: auto; padding: 0 18px"
+            >
+              <span>UI</span>
+            </div>
+            <div
+              class="tag-chip fw-bold border-thick flex-center"
+              style="width: auto; padding: 0 18px"
+            >
+              <span>TECH</span>
+            </div>
+            <div
+              class="tag-chip fw-bold border-thick flex-center"
+              style="width: auto; padding: 0 18px"
+            >
+              <span>RESEARCH</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-5 border-bottom border-3 border-black pb-5">
+        <div class="inner">
+          <div class="container">
+            <div class="d-flex gap-5 articles-row">
+              <div class="col-12 col-lg-8">
+                <div class="d-flex flex-column gap-4">
+                  <article class="inner border-thick py-3 px-5 shadow-hard">
+                    <div class="d-flex article-card-body">
+                      <div
+                        class="article-card-media img w-75 h-75 border-thick me-5 mt-4"
+                      >
+                        <img
+                          src="https://images.openai.com/static-rsc-4/W5X0scN5DebZb0hJiC1u4uDqWP5bu_BrJJRsq5OZtleUngj3yUZ4NfQk4VEfZSicbxEbTsIrQOSodQhmvJsUzvPHz-JPevRqnvv6F19SgDX-iCqeMr77YwDBBjTSa0pknuF5ezgerYRxwQ5BeXcP9N-QEgBPZfxDKa9pkt8fyooNYGsZzwXN5lEkdce6X_6e?purpose=fullsize"
+                          class="w-100"
+                          alt="Close-up of a mobile app interface with sharp geometric edges"
+                        />
+                      </div>
+                      <div class="content d-flex flex-column gap-2">
+                        <div
+                          class="tag-chip fw-bold border-thick badge-tilt-dark flex-center"
+                        >
+                          <span>TECH</span>
+                        </div>
+                        <span class="fs-3 fw-bold"
+                          >Why Your Website Needs More Edge</span
+                        >
+                        <p class="fs-4 fw-semibold text-body-secondary">
+                          Rounded corners and soft shadows won't make your
+                          product stand out. We break down five brutalist
+                          interfaces that get more attention — and more
+                          conversions — by refusing to blend in.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between article-meta-row mx-1"
+                    >
+                      <div class="name">
+                        <i class="fa fa-user"></i
+                        ><span class="fw-bold fs-6">BY MAHMOUD AHMED</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa fa-calendar"></i
+                        ><span class="fw-bold fs-6">JAN 8, 2025</span>
+                      </div>
+                      <div class="time">
+                        <i class="fa fa-clock"></i
+                        ><span class="fw-bold fs-6">5 MIN READ</span>
+                      </div>
+                      <div class="heart text-danger">
+                        <i class="fa fa-heart"></i
+                        ><span class="fw-bold fs-6">127</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="inner border-thick py-3 px-5 shadow-hard">
+                    <div class="d-flex article-card-body">
+                      <div
+                        class="article-card-media img w-75 h-75 border-thick me-5 mt-4"
+                      >
+                        <img
+                          src="https://images.openai.com/static-rsc-4/zkeyOaCLVnI9WHrN5PbVWG9LYesSru3lVdtEhaKjtKJwqxyyy1fgrNYagcUp9E5zBnHouMV5e_XwNDVMHvvlM1Hmwv4Nym0wSec2PYFnSbwpDUXFeN9A2oI-71hyD2xbnNfsxXGZsXjfE2P7PztjZGMkacaQiD1anbpauLISar2seYaMLArZ08r2PwWyVfai?purpose=fullsize"
+                          class="w-100"
+                          alt="Grid of clashing color swatches on a moodboard"
+                        />
+                      </div>
+                      <div class="content d-flex flex-column gap-2">
+                        <div
+                          class="tag-chip fw-bold border-thick badge-tilt-dark flex-center"
+                        >
+                          <span>UI</span>
+                        </div>
+                        <span class="fs-3 fw-bold"
+                          >The Death of Minimalism</span
+                        >
+                        <p class="fs-4 fw-semibold text-body-secondary">
+                          Clean, quiet, forgettable — minimalism promised
+                          clarity but delivered sameness. Here's why more
+                          studios are reaching for texture, contrast, and
+                          unapologetic color again.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between article-meta-row mx-1"
+                    >
+                      <div class="name">
+                        <i class="fa fa-user"></i
+                        ><span class="fw-bold fs-6">BY SARA YOUSSEF</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa fa-calendar"></i
+                        ><span class="fw-bold fs-6">JAN 3, 2025</span>
+                      </div>
+                      <div class="time">
+                        <i class="fa fa-clock"></i
+                        ><span class="fw-bold fs-6">7 MIN READ</span>
+                      </div>
+                      <div class="heart text-danger">
+                        <i class="fa fa-heart"></i
+                        ><span class="fw-bold fs-6">94</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="inner border-thick py-3 px-5 shadow-hard">
+                    <div class="d-flex article-card-body">
+                      <div
+                        class="article-card-media img w-75 h-75 border-thick me-5 mt-4"
+                      >
+                        <img
+                          src="https://images.openai.com/static-rsc-4/OSscK76kiNJGc59_sCLiaQKgeN_PO7zPo9NrUB2ihcS6i1J12cLzi-qHwh-rlx9Z9fbCYzYynAk6pDOXsEfw2FpdEVixuV6bIiX-RbS7E27gP7ql1H2elEHfKfTSUWtezrMBR4oJt9SIbGhjOAqJV2ivMwOnwp-bY5LIL3i6Xu5EPIUrjzi0IK0YB4X-ew0j?purpose=fullsize"
+                          class="w-100"
+                          alt="Hand sketching a wireframe layout on paper"
+                        />
+                      </div>
+                      <div class="content d-flex flex-column gap-2">
+                        <div
+                          class="tag-chip fw-bold border-thick badge-tilt-dark flex-center"
+                        >
+                          <span>UX</span>
+                        </div>
+                        <span class="fs-3 fw-bold"
+                          >Nobody Reads Your Onboarding Screens</span
+                        >
+                        <p class="fs-4 fw-semibold text-body-secondary">
+                          You spent three weeks writing perfect onboarding copy.
+                          Users skipped it in four seconds. We tested six
+                          products and found what actually gets people to stay.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between article-meta-row mx-1"
+                    >
+                      <div class="name">
+                        <i class="fa fa-user"></i
+                        ><span class="fw-bold fs-6">BY OMAR FATHY</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa fa-calendar"></i
+                        ><span class="fw-bold fs-6">DEC 27, 2024</span>
+                      </div>
+                      <div class="time">
+                        <i class="fa fa-clock"></i
+                        ><span class="fw-bold fs-6">4 MIN READ</span>
+                      </div>
+                      <div class="heart text-danger">
+                        <i class="fa fa-heart"></i
+                        ><span class="fw-bold fs-6">203</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="inner border-thick py-3 px-5 shadow-hard">
+                    <div class="d-flex article-card-body">
+                      <div
+                        class="article-card-media img w-75 h-75 border-thick me-5 mt-4"
+                      >
+                        <img
+                          src="https://images.openai.com/static-rsc-4/f3h8c2748bNyZGMe_-WrpWCi3Tv3kxhIdgtjpgYmNfs2kM0AlFeCi0xjxyIT31z47noYH9pix7Etrf41yZKdg1BMdpcUyv4uY_3k39jRoYqzPxG2gzgLNjfd11lZROt4DXjzQtIBWQW58E3PV1IAJzHxqQU7GN1VCU3T-wyqDBmQjEb0-5J5Xy-JnItZgLS8?purpose=fullsize"
+                          class="w-100"
+                          alt="Dark themed dashboard interface on a laptop screen"
+                        />
+                      </div>
+                      <div class="content d-flex flex-column gap-2">
+                        <div
+                          class="tag-chip fw-bold border-thick badge-tilt-dark flex-center"
+                        >
+                          <span>UI</span>
+                        </div>
+                        <span class="fs-3 fw-bold"
+                          >Dark Mode Is Not a Design System</span
+                        >
+                        <p class="fs-4 fw-semibold text-body-secondary">
+                          Flipping a toggle isn't the same as designing for low
+                          light. Here's what teams miss when they treat dark
+                          mode as an afterthought instead of a real surface.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between article-meta-row mx-1"
+                    >
+                      <div class="name">
+                        <i class="fa fa-user"></i
+                        ><span class="fw-bold fs-6">BY LAILA HASSAN</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa fa-calendar"></i
+                        ><span class="fw-bold fs-6">DEC 19, 2024</span>
+                      </div>
+                      <div class="time">
+                        <i class="fa fa-clock"></i
+                        ><span class="fw-bold fs-6">6 MIN READ</span>
+                      </div>
+                      <div class="heart text-danger">
+                        <i class="fa fa-heart"></i
+                        ><span class="fw-bold fs-6">158</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="inner border-thick py-3 px-5 shadow-hard">
+                    <div class="d-flex article-card-body">
+                      <div
+                        class="article-card-media img w-75 h-75 border-thick me-5 mt-4"
+                      >
+                        <img
+                          src="https://images.openai.com/static-rsc-4/O0VGKdjgq51RIjU6z17mvmwaKScpsZSQfK1P6gFk5C8OIF_-KyDbtLgix4UFf57SePHFCe7OKyCA1-1mhIj8A758guNQwzXDF7wnKJnFNilfNKYscAfjYa2V00peK7jLjPUXmRYXsbWjwtYNpr04PrnaHDfeJxAq9OF9JRKQw70xDfJFUMRlpodzDRJjMv9o?purpose=fullsize"
+                          class="w-100"
+                          alt="Designer annotating a Figma handoff file"
+                        />
+                      </div>
+                      <div class="content d-flex flex-column gap-2">
+                        <div
+                          class="tag-chip fw-bold border-thick badge-tilt-dark flex-center"
+                        >
+                          <span>UX</span>
+                        </div>
+                        <span class="fs-3 fw-bold"
+                          >What Figma Got Wrong About Handoff</span
+                        >
+                        <p class="fs-4 fw-semibold text-body-secondary">
+                          Dev mode was supposed to end the designer-developer
+                          standoff. We talked to twelve engineering teams to see
+                          if it actually did.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between article-meta-row mx-1"
+                    >
+                      <div class="name">
+                        <i class="fa fa-user"></i
+                        ><span class="fw-bold fs-6">BY MOHAMED AHMED</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa fa-calendar"></i
+                        ><span class="fw-bold fs-6">DEC 12, 2024</span>
+                      </div>
+                      <div class="time">
+                        <i class="fa fa-clock"></i
+                        ><span class="fw-bold fs-6">8 MIN READ</span>
+                      </div>
+                      <div class="heart text-danger">
+                        <i class="fa fa-heart"></i
+                        ><span class="fw-bold fs-6">176</span>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="inner border-thick py-3 px-5 shadow-hard">
+                    <div class="d-flex article-card-body">
+                      <div
+                        class="article-card-media img w-75 h-75 border-thick me-5 mt-4"
+                      >
+                        <img
+                          src="https://images.openai.com/static-rsc-4/e69q4DpKDS3vIdgpGUhoGsAhQKGfvftyNtM04IaUQP0zpMRN7vvh5v3DW8u3kTeNTSWk5nBZU0Y4x_HpWdvQsbEqc-wdN2jOYAMJWr8xoh6g3L4XXQQBhn04h5h3-eu19_b2EJMs8epyDNCdajFu4L9fqAU8ylXee8LMT4MRemoe8unpCsoiMuaxDUGRBn25?purpose=fullsize"
+                          class="w-100"
+                          alt="Usability testing session with a participant and a laptop"
+                        />
+                      </div>
+                      <div class="content d-flex flex-column gap-2">
+                        <div
+                          class="tag-chip fw-bold border-thick badge-tilt-dark flex-center w-25"
+                        >
+                          <span>RESEARCH</span>
+                        </div>
+                        <span class="fs-3 fw-bold"
+                          >Five Usability Tests We'd Never Run Again</span
+                        >
+                        <p class="fs-4 fw-semibold text-body-secondary">
+                          Not all research is good research. A blunt look back
+                          at the studies that wasted our time — and what we run
+                          instead now.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between article-meta-row mx-1"
+                    >
+                      <div class="name">
+                        <i class="fa fa-user"></i
+                        ><span class="fw-bold fs-6">BY FATMA MOSTAFA</span>
+                      </div>
+                      <div class="date">
+                        <i class="fa fa-calendar"></i
+                        ><span class="fw-bold fs-6">DEC 5, 2024</span>
+                      </div>
+                      <div class="time">
+                        <i class="fa fa-clock"></i
+                        ><span class="fw-bold fs-6">6 MIN READ</span>
+                      </div>
+                      <div class="heart text-danger">
+                        <i class="fa fa-heart"></i
+                        ><span class="fw-bold fs-6">112</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="text-white flex-center mt-5">
+                  <span
+                    class="fs-5 fw-bold btn-block-dark shadow-hard px-4 py-2 text-decoration-none flex-center"
+                    >+ LOAD MORE ARTICLES</span
+                  >
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-4 sidebar-col position-relative">
+                <div class="position-sticky sidebar-sticky-offset">
+                  <div class="inner p-4 border-thick shadow-hard mb-4">
+                    <div class="d-flex flex-column gap-3">
+                      <span class="fs-3 fw-bold text-black">TRENDING NOW</span>
+                      <div class="d-flex gap-3 flex-center">
+                        <div class="rank-marker fs-1 fw-bold text-danger">
+                          <span>01</span>
+                        </div>
+                        <span class="fs-6 fw-bold text-black"
+                          >The Death of Minimalism</span
+                        >
+                      </div>
+                      <div class="d-flex gap-3 flex-center">
+                        <div class="rank-marker fs-1 fw-bold text-primary">
+                          <span>02</span>
+                        </div>
+                        <span class="fs-6 fw-bold text-black"
+                          >Nobody Reads Your Onboarding Screens</span
+                        >
+                      </div>
+                      <div class="d-flex gap-3 flex-center">
+                        <div
+                          class="rank-marker fs-1 fw-bold text-accent-violet"
+                        >
+                          <span>03</span>
+                        </div>
+                        <span class="fs-6 fw-bold text-black"
+                          >Why Your Website Needs More Edge</span
+                        >
+                      </div>
+                      <div class="d-flex gap-3 flex-center">
+                        <div class="rank-marker fs-1 fw-bold text-danger">
+                          <span>04</span>
+                        </div>
+                        <span class="fs-6 fw-bold text-black"
+                          >Dark Mode Is Not a Design System</span
+                        >
+                      </div>
+                      <div class="d-flex gap-3 flex-center">
+                        <div class="rank-marker fs-1 fw-bold text-primary">
+                          <span>05</span>
+                        </div>
+                        <span class="fs-6 fw-bold text-black"
+                          >What Figma Got Wrong About Handoff</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="inner p-4 border-thick shadow-hard bg-accent-yellow"
+                  >
+                    <div class="d-flex flex-column gap-3">
+                      <span class="fs-3 fw-bold text-black"
+                        >GET THE NEWSLETTER</span
+                      >
+                      <p class="fs-6 fw-semibold text-black m-0">
+                        One blunt design opinion, every Thursday. No fluff,
+                        unsubscribe anytime.
+                      </p>
+                      <a
+                        href="#"
+                        class="bg-black py-2 px-3 text-decoration-none flex-center shadow-hard"
+                        ><span class="fs-6 fw-bold text-white"
+                          >SUBSCRIBE NOW</span
+                        ></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="authors">
+      <section class="mb-5 border-3 border-bottom border-black pb-5">
+        <div class="container section-spacing-top mb-4">
+          <div
+            class="badge-tilt-box flex-center mb-4 badge-tilt-dark text-white bg-black position-relative"
+          >
+            <div class="badge-tilt-dark-shadow"></div>
+            <span class="text-white fw-semibold">THE PEOPLE</span>
+          </div>
+          <div class="heading-stacked-xl text-loose-leading text-black mb-3">
+            <span>OUR AUTHORS</span>
+          </div>
+          <p
+            class="fs-3 fw-semibold text-body-secondary"
+            style="max-width: 640px"
+          >
+            Designers, researchers, and engineers who write the reviews — not
+            marketers pretending to be designers.
+          </p>
+        </div>
+      </section>
+
+      <section class="my-5 border-bottom border-3 border-black pb-5">
+        <div class="container">
+          <div class="author-grid">
+            <div class="inner border-thick p-4 shadow-hard">
+              <div class="d-flex gap-3 align-items-center mb-3">
+                <img
+                  src="https://i.pravatar.cc/150?img=12"
+                  class="author-avatar rounded-circle border-thick"
+                  alt="Mahmoud Ahmed"
+                />
+                <div class="d-flex flex-column">
+                  <span class="fs-4 fw-bold">Mahmoud Ahmed</span>
+                  <span class="fs-6 text-body-secondary fw-semibold"
+                    >Senior UX Editor</span
+                  >
+                </div>
+              </div>
+              <p class="fs-6 text-body-secondary">
+                Eight years reviewing product interfaces for startups and
+                agencies. Believes most design problems are actually writing
+                problems.
+              </p>
+              <div
+                class="tag-chip fw-bold border-thick flex-center mt-2"
+                style="width: auto; padding: 0 14px"
+              >
+                <span>42 ARTICLES</span>
+              </div>
+            </div>
+
+            <div class="inner border-thick p-4 shadow-hard">
+              <div class="d-flex gap-3 align-items-center mb-3">
+                <img
+                  src="https://i.pravatar.cc/150?img=32"
+                  class="author-avatar rounded-circle border-thick"
+                  alt="Sara Youssef"
+                />
+                <div class="d-flex flex-column">
+                  <span class="fs-4 fw-bold">Sara Youssef</span>
+                  <span class="fs-6 text-body-secondary fw-semibold"
+                    >Visual Design Lead</span
+                  >
+                </div>
+              </div>
+              <p class="fs-6 text-body-secondary">
+                Trained as a typographer before moving into product. Writes
+                about color, contrast, and why most brand systems fall apart at
+                scale.
+              </p>
+              <div
+                class="tag-chip fw-bold border-thick flex-center mt-2"
+                style="width: auto; padding: 0 14px"
+              >
+                <span>35 ARTICLES</span>
+              </div>
+            </div>
+
+            <div class="inner border-thick p-4 shadow-hard">
+              <div class="d-flex gap-3 align-items-center mb-3">
+                <img
+                  src="https://i.pravatar.cc/150?img=51"
+                  class="author-avatar rounded-circle border-thick"
+                  alt="Omar Fathy"
+                />
+                <div class="d-flex flex-column">
+                  <span class="fs-4 fw-bold">Omar Fathy</span>
+                  <span class="fs-6 text-body-secondary fw-semibold"
+                    >Product UX Researcher</span
+                  >
+                </div>
+              </div>
+              <p class="fs-6 text-body-secondary">
+                Runs usability tests for a living and writes about the ones that
+                actually change roadmaps, not just decks.
+              </p>
+              <div
+                class="tag-chip fw-bold border-thick flex-center mt-2"
+                style="width: auto; padding: 0 14px"
+              >
+                <span>28 ARTICLES</span>
+              </div>
+            </div>
+
+            <div class="inner border-thick p-4 shadow-hard">
+              <div class="d-flex gap-3 align-items-center mb-3">
+                <img
+                  src="https://i.pravatar.cc/150?img=45"
+                  class="author-avatar rounded-circle border-thick"
+                  alt="Laila Hassan"
+                />
+                <div class="d-flex flex-column">
+                  <span class="fs-4 fw-bold">Laila Hassan</span>
+                  <span class="fs-6 text-body-secondary fw-semibold"
+                    >Design Community Manager</span
+                  >
+                </div>
+              </div>
+              <p class="fs-6 text-body-secondary">
+                Runs our weekly critique sessions and keeps the community honest
+                — and kind. Writes about the craft of giving feedback.
+              </p>
+              <div
+                class="tag-chip fw-bold border-thick flex-center mt-2"
+                style="width: auto; padding: 0 14px"
+              >
+                <span>19 ARTICLES</span>
+              </div>
+            </div>
+
+            <div class="inner border-thick p-4 shadow-hard">
+              <div class="d-flex gap-3 align-items-center mb-3">
+                <img
+                  src="https://i.pravatar.cc/150?img=68"
+                  class="author-avatar rounded-circle border-thick"
+                  alt="Youssef Nabil"
+                />
+                <div class="d-flex flex-column">
+                  <span class="fs-4 fw-bold">Youssef Nabil</span>
+                  <span class="fs-6 text-body-secondary fw-semibold"
+                    >Front-End Engineer</span
+                  >
+                </div>
+              </div>
+              <p class="fs-6 text-body-secondary">
+                Builds the prototypes we critique. Writes the technical side:
+                performance, accessibility, and what design decisions actually
+                cost in code.
+              </p>
+              <div
+                class="tag-chip fw-bold border-thick flex-center mt-2"
+                style="width: auto; padding: 0 14px"
+              >
+                <span>16 ARTICLES</span>
+              </div>
+            </div>
+
+            <div class="inner border-thick p-4 shadow-hard">
+              <div class="d-flex gap-3 align-items-center mb-3">
+                <img
+                  src="https://i.pravatar.cc/150?img=25"
+                  class="author-avatar rounded-circle border-thick"
+                  alt="Nour El-Din"
+                />
+                <div class="d-flex flex-column">
+                  <span class="fs-4 fw-bold">Nour El-Din</span>
+                  <span class="fs-6 text-body-secondary fw-semibold"
+                    >Motion &amp; Interaction Designer</span
+                  >
+                </div>
+              </div>
+              <p class="fs-6 text-body-secondary">
+                Obsessed with the 200 milliseconds between a click and a
+                response. Writes about when animation helps and when it's just
+                noise.
+              </p>
+              <div
+                class="tag-chip fw-bold border-thick flex-center mt-2"
+                style="width: auto; padding: 0 14px"
+              >
+                <span>11 ARTICLES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="my-5 pb-5">
+        <div class="container">
+          <div
+            class="inner border-thick shadow-hard p-4 p-md-5 bg-accent-yellow position-relative overflow-hidden"
+          >
+            <div class="row align-items-center gy-4">
+              <div class="col-12 col-lg-7">
+                <span class="heading-section-xl d-block">
+                  JOIN THE COMMUNITY
+                </span>
+                <p class="fs-4 fw-semibold text-black mb-0">
+                  Every week, our authors host a live critique session where
+                  anyone can submit a screen and get an honest breakdown. No
+                  sign-up fee, no fluff — just direct feedback from people who
+                  ship.
+                </p>
+              </div>
+              <div class="col-12 col-lg-5">
+                <div
+                  class="d-flex flex-column flex-sm-row gap-3 justify-content-lg-end"
+                >
+                  <a
+                    href="#"
+                    class="bg-black py-3 px-4 text-decoration-none flex-center shadow-hard"
+                    ><span class="fs-5 fw-bold text-white"
+                      >JOIN A CRITIQUE SESSION</span
+                    ></a
+                  >
+                  <a
+                    href="#"
+                    class="bg-white py-3 px-4 text-decoration-none flex-center border border-3 border-black"
+                    ><span class="fs-5 fw-bold text-black"
+                      >SEE THIS WEEK'S TOPIC</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer
+      class="site-footer text-white pt-5 pb-4 border-top border-3 border-black"
+    >
+      <div class="container">
+        <div class="row gy-4 footer-columns">
+          <div class="col-12 col-md-4">
+            <div class="text-loose-leading mb-3">
+              <span class="fs-2 fw-bold text-white">The UX</span
+              ><span class="fs-2 fw-bold text-accent-orange"> Review</span>
+            </div>
+            <p class="fs-6 text-white-50">
+              Straight-talking critiques, case studies, and interviews for
+              people who build digital products — published every week, no
+              filler.
+            </p>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="footer-heading fw-bold mb-3">EXPLORE</h6>
+            <div class="d-flex flex-column gap-2">
+              <a href="#home" class="footer-link fs-6">Home</a>
+              <a href="#articles" class="footer-link fs-6">Latest Articles</a>
+              <a href="#authors" class="footer-link fs-6">Authors</a>
+              <a href="#community" class="footer-link fs-6">Community</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-2">
+            <h6 class="footer-heading fw-bold mb-3">TOPICS</h6>
+            <div class="d-flex flex-column gap-2">
+              <a href="#articles" class="footer-link fs-6">UX</a>
+              <a href="#articles" class="footer-link fs-6">UI</a>
+              <a href="#articles" class="footer-link fs-6">Tech</a>
+              <a href="#articles" class="footer-link fs-6">Research</a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h6 class="footer-heading fw-bold mb-3">STAY IN THE LOOP</h6>
+            <p class="fs-6 text-white-50">
+              Get one honest design opinion in your inbox every Thursday.
+            </p>
+            <a
+              href="#"
+              class="bg-accent-yellow py-2 px-3 text-decoration-none flex-center border border-2 border-white rounded-5 d-inline-flex"
+              ><span class="fs-6 fw-bold text-black">SUBSCRIBE NOW</span></a
+            >
+          </div>
+        </div>
+        <div
+          class="footer-divider mt-4 pt-3 d-flex justify-content-between flex-wrap gap-2"
+        >
+          <span class="fs-6 text-white-50"
+            >© 2025 The UX Review. All rights reserved.</span
+          >
+          <div class="d-flex gap-3">
+            <a href="#" class="footer-link fs-6">Privacy Policy</a>
+            <a href="#" class="footer-link fs-6">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./all.js"></script>
+    <script>
+      var navToggle = document.querySelector(".nav-toggle");
+      var navLinks = document.querySelector(".nav-links");
+      if (navToggle && navLinks) {
+        navToggle.addEventListener("click", function () {
+          var isOpen = navLinks.classList.toggle("is-open");
+          navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+        navLinks.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            navLinks.classList.remove("is-open");
+            navToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
