@@ -19,9 +19,25 @@ html {
   scroll-padding-top: 110px;
 }
 
+nav.fixed-top {
+  z-index: 1050;
+}
+
 body {
   overflow-x: hidden;
   padding-top: 96px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .flex-center {
@@ -36,7 +52,7 @@ body {
   top: 17px;
 }
 .section-spacing-top {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .text-accent-orange {
@@ -118,8 +134,12 @@ body {
 .tag-chip {
   background-color: var(--color-accent-yellow);
   box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.85);
-  width: 60px;
-  height: 30px;
+  width: auto;
+  min-width: 60px;
+  height: auto;
+  min-height: 30px;
+  padding: 4px 14px;
+  white-space: nowrap;
 }
 
 .heading-stacked-xl {
@@ -194,6 +214,9 @@ body {
   border-radius: 6px;
   background: #fff;
   cursor: pointer;
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
 }
 .nav-toggle span {
   display: block;
@@ -268,16 +291,13 @@ img {
   height: 90px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .decor-square-1,
   .decor-square-2,
   .decor-square-3 {
     height: 150px;
     width: 150px;
   }
-}
-
-@media (max-width: 991px) {
   body {
     padding-top: 84px;
   }
@@ -288,11 +308,28 @@ img {
     flex-wrap: wrap;
     row-gap: 12px;
   }
+  .nav-bar-card {
+    padding: 10px !important;
+  }
+  .subscribe-btn {
+    display: none !important;
+  }
+  .nav-toggle {
+    display: flex;
+  }
   .nav-links {
+    display: none !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem !important;
     order: 3;
     width: 100%;
-    justify-content: center;
-    gap: 1.25rem !important;
+  }
+  .nav-links.is-open {
+    display: flex !important;
+    background: #fff;
+    position: relative;
+    z-index: 10;
   }
   .hero-row {
     flex-direction: column;
@@ -338,26 +375,6 @@ img {
   }
   .navbar-sticky-offset {
     top: 8px;
-  }
-  .nav-bar-card {
-    padding: 10px !important;
-  }
-  .subscribe-btn {
-    display: none !important;
-  }
-  .nav-toggle {
-    display: flex;
-  }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem !important;
-    order: 3;
-    width: 100%;
-  }
-  .nav-links.is-open {
-    display: flex;
   }
   .badge-tilt-box {
     width: 130px;
@@ -407,6 +424,10 @@ img {
 }
 
 @media (max-width: 576px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .decor-square-1,
   .decor-square-2 {
     display: none;
@@ -442,5 +463,40 @@ img {
   .author-avatar {
     width: 70px;
     height: 70px;
+  }
+  .badge-tilt-box {
+    width: 115px;
+    height: 42px;
+  }
+  .badge-tilt-box span {
+    font-size: 0.8rem;
+  }
+  .badge-tilt-dark-shadow {
+    width: 115px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading-stacked-xl {
+    font-size: clamp(32px, 10vw, 46px);
+  }
+  .quote-box span {
+    font-size: 1.05rem !important;
+  }
+  .badge-tilt-box {
+    width: 105px;
+    height: 38px;
+  }
+  .badge-tilt-box span {
+    font-size: 0.72rem;
+  }
+  .badge-tilt-dark-shadow {
+    width: 105px;
+    height: 38px;
+  }
+  .tag-chip {
+    padding: 3px 10px;
+    font-size: 0.85rem;
   }
 }
